@@ -9,7 +9,7 @@ IAM Role and Policies: Automatically create IAM roles and policies for EKS clust
 
 Networking Configuration: Configure VPC, subnets, and security groups for the EKS cluster.
 
-#Steps Involved in the Process
+# Steps Involved in the Process
 
 ### Install AWS CLI 
 
