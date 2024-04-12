@@ -11,18 +11,39 @@ Networking Configuration: Configure VPC, subnets, and security groups for the EK
 
 # Steps Involved in the Process
 
-### Install AWS CLI 
+##Set Up AWS Credentials:
 
-As the first step, you need to install AWS CLI as we will use the AWS CLI (`aws configure`) command to connect Terraform with AWS in the next steps.
+Make sure you have your AWS access key ID and secret access key configured. You can set them as environment variables or use the AWS CLI to configure them.
+Clone the Repository:
 
-Follow the below link to Install AWS CLI.
+Clone this repository to your local machine using the command:
+bash
+Copy code
 ```
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+git clone <repository_url>
 ```
-### Install Terraform
+Update Variables:
 
-Next, Install Terraform using the below link.
-```
-https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
-```
+Open the variables.tf file in a text editor.
+Update the variables to match your desired configuration. You can specify details such as the AWS region, EKS cluster name, instance type for worker nodes, etc.
+Initialize Terraform:
 
+Open a terminal or command prompt.
+Navigate to the directory where you cloned the repository.
+Run the following command to initialize Terraform:
+csharp
+Copy code
+terraform init
+Plan and Apply Changes:
+
+After initialization, run the following command to see the execution plan:
+Copy code
+terraform plan
+Review the plan to ensure it matches your expectations.
+If the plan looks good, apply the changes by running:
+Copy code
+terraform apply
+Access the EKS Cluster:
+
+Once Terraform has finished applying changes, it will generate a kubeconfig file.
+Use the generated kubeconfig file to access your EKS cluster and manage Kubernetes resources.
