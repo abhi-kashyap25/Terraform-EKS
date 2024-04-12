@@ -9,6 +9,8 @@ IAM Role and Policies: Automatically create IAM roles and policies for EKS clust
 
 Networking Configuration: Configure VPC, subnets, and security groups for the EKS cluster.
 
+**#Steps Involved in the Process**
+
 ### Install AWS CLI 
 
 As the first step, you need to install AWS CLI as we will use the AWS CLI (`aws configure`) command to connect Terraform with AWS in the next steps.
