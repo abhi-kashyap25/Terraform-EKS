@@ -11,7 +11,7 @@ Networking Configuration: Configure VPC, subnets, and security groups for the EK
 
 # Steps Involved in the Process
 
-##Set Up AWS Credentials:
+### Set Up AWS Credentials:
 
 Make sure you have your AWS access key ID and secret access key configured. You can set them as environment variables or use the AWS CLI to configure them.
 Clone the Repository:
@@ -32,17 +32,21 @@ Open a terminal or command prompt.
 Navigate to the directory where you cloned the repository.
 Run the following command to initialize Terraform:
 csharp
-Copy code
+```
 terraform init
+```
 Plan and Apply Changes:
 
 After initialization, run the following command to see the execution plan:
-Copy code
+```
 terraform plan
+```
+
 Review the plan to ensure it matches your expectations.
 If the plan looks good, apply the changes by running:
-Copy code
+```
 terraform apply
+```
 Access the EKS Cluster:
 
 Once Terraform has finished applying changes, it will generate a kubeconfig file.
