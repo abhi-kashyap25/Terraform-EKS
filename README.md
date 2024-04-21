@@ -68,4 +68,4 @@ Access the EKS Cluster:
 
 Once Terraform has finished applying changes, it will generate a kubeconfig file.
 Use the generated kubeconfig file to access your EKS cluster and manage Kubernetes resources.
->>>>>>> origin/main
+
