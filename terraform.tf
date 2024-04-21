@@ -1,21 +1,16 @@
-# Terraform Cloud Configuration:
-# This block specifies the configuration for using Terraform Cloud.
 terraform {
   cloud {
-    # The name of your organization on Terraform Cloud.
-    organization = "your_organization"
+   
+    organization = "your_organization"  # The name of your organization on Terraform Cloud.
 
-    # The name of the Terraform workspace you are using within your organization.
+    
     workspaces {
-      name = "your_terraform_workspace"
+      name = "your_terraform_workspace" # The name of the Terraform workspace you are using within your organization.
     }
   }
 }
 
-# Terraform Configuration:
-# This block specifies the requirements for Terraform, including the providers and versions.
 terraform {
-  # Specify the required providers and their versions.
   required_providers {
     aws = {
       # The provider for AWS infrastructure.
@@ -25,6 +20,5 @@ terraform {
     }
   }
 
-  # Specify the required version of Terraform itself.
-  required_version = ">= 1.3"
+  required_version = ">= 1.3"  # Specify the required version of Terraform itself.
 }
