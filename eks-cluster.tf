@@ -41,6 +41,8 @@ module "eks" {
     }
 }
 
+
+# Optional
 # Define AWS IAM policy data for the Amazon EBS CSI driver.
 # This policy is used to grant permissions to the EBS CSI driver.
 data "aws_iam_policy" "ebs_csi_policy" {
