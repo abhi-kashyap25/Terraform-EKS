@@ -1,6 +1,3 @@
-provider "aws" {
-  region = var.aws_region # Use the aws_region variable to specify the region.
-}
 
 data "aws_availability_zones" "available" {}
 
@@ -33,7 +30,7 @@ module "vpc" {
   public_subnets  = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
 
   # Enable and configure NAT gateways within the VPC.
-  enable_nat_gateway   = true # Enable NAT gateways.
+  enable_nat_gateway   = true # Enable NAT gateways.s
   single_nat_gateway   = true # Use a single NAT gateway.
 
   # Enable DNS hostnames for the VPC.
